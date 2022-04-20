@@ -1,0 +1,35 @@
+
+.h1{
+    text-align: center;
+    font-style: italic;
+    color: crimson;
+    font-size: larger;
+}
+
+.form-container{
+    text-align: center; 
+    margin-top: -1%;
+}
+
+.User-from{
+    padding: 20% 20%;
+}
+
+.User-formBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    border: 1px solid #b1aeae;
+    border-radius: 2%;
+    box-shadow: 3%;
+    color: black;
+}
+
+.form-text{
+    margin-bottom: 15px !important;
+    float: left;
+    background-color: white;
+}

@@ -1,0 +1,38 @@
+.navbar{
+    width: 100%;
+    padding: 10px 0;
+    background-color:darkcyan;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 5%;
+    float: left;
+}
+
+.navbar .userlist{
+    margin-left: 70%;
+    margin-top: 0.5%;
+    color: white;
+}
+
+.navbar .userform{
+    margin-left: 1%;
+    margin-top: 0.5%;
+    color: white;
+}
+
+.navbar .colleges{
+    margin-left: 1%;
+    margin-top: 0.5%;
+    color: white;
+}
