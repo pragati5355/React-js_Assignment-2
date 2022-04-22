@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react';
 import './collegelist.css';
-import {Grid, TextField} from '@material-ui/core';
+import {TextField,} from '@material-ui/core';
 import * as services from '../../services/services';
 import CollegeTable from '../../components/collegeTable';
 
+
 function Collegelist(props) {
     const [collegeList, setCollegeList] = useState([])
-    const [viewType, setViewType] = useState(true)
     const [searchText, setSearch] = useState("")
 
     const callSearchCollege = () => {
