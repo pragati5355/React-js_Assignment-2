@@ -9,7 +9,7 @@ function CollegeTable(props) {
         <div>
             <table>
                 <tr>
-                    <th>SR No</th>
+                    <th>Serial No</th>
                     <th>College</th>
                     <th>Country</th>
                 </tr>
@@ -30,8 +30,13 @@ function CollegeTable(props) {
                 
             </table>
 
-            <Dialog open={dialogOpen} onClose={()=>{setOpen(false)}}>
+            <Dialog open={dialogOpen} onClose={()=>{setOpen(true)}}>
                 <div style={{padding:"80px", width: "400px"}}>
+                    <div style={{float:"right", cursor:"pointer"}}>
+                        <h2 style={{color:"blue" , fontStyle:"italic", marginTop:"-50px", marginRight:"-15px"}}>
+                            <span onClick={()=> {setOpen(false)}}>close</span>
+                        </h2>
+                    </div>
                     <div><h2>College Details</h2></div>
                     <div><h3>{college.name}</h3></div>
                     <div><h3>{college.country}</h3></div>

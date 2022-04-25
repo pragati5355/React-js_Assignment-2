@@ -1,16 +1,26 @@
+import {Grid} from '@material-ui/core';
+import Detailcard from '../Collegedetailcard';
 
+function CardList(props) {
 
-function CollegeCard(props) {
-    
+    const collegeList = props.collegeList;
+   
 
     return (
-        <div style={{padding: "20px", border: "1px solid #f3f3f3", 
-                    boxShadow:"2px 10px 20px #f2f2f2", cursor: "pointer", height: "250px"}} 
-            onClick={props.onCardClick}>
-            <div><h2 style={{height: "150px", overflow: "hidden"}}>{props.name}</h2></div>
-            <div><h3>{props.country}</h3></div>
+        <div>
+            {collegeList.length ? 
+                <Grid container spacing={2}>
+                    {collegeList.map(college =>{
+                        return ( 
+                            <Grid item  key={college.email} xl={3} lg={3} md={4} sm={6} xs={12}>
+                                <Detailcard user={college}/>
+                            </Grid>
+                        )
+                    })}
+                </Grid> : 
+            <h1>There is no user added yet...!!!</h1>}
         </div>
     )
 }
 
-export default CollegeCard;
+export default CardList;

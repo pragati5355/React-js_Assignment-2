@@ -35,7 +35,7 @@ function Userlist(props){
 
             <br/>
 
-            {userList.length ? 
+            {userList.length ? (
                
                <Grid container spacing={2}>
                    {userList.map(user=>{
@@ -46,7 +46,7 @@ function Userlist(props){
                             </Grid>
                         )
                     })}
-               </Grid> :
+               </Grid>) :
             
             <h1>No user added yet !!</h1>}
 
